@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+*{
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.flex-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-family: Lato, appleLogo, sans-serif;
+    height: 100%;
+}
+.left-panel{
+    background: #4D394B;
+    width: 220px;
+    color: rgb(202,196,201);
+}
+.left-panel-header{
+    padding: 7px 15px;
+    cursor: pointer;
+}
+.left-panel-header:hover{
+    background: #2b172A;
+    color: #ffffff;    
+}
+.message-panel{
+    background: #ffffff;
+}
+
+.name-of-workspace{
+    color: #ffffff;
+    font-size: 21px;
+    float: left;
+}
+.notififications{
+    float: right;
+    font-size: 17px;
+    margin: 7px 2px;
+}
+.notififications:hover{
+    color: #ffffff;
+}
+.options{
+    padding: 7px;
+}
+.user{
+    font-size: 13px;
+}
+.green-dot {
+    color: #50774C;
+    margin-right: 7px;
+}
+.choose{
+    padding: 4px 15px;
+    cursor: pointer;
+}
+.choose:hover{
+    background: #2b172A;
+}
+.threads-icon{
+    float: left;
+    margin-right: 7px; 
+}
+.threads{
+    margin: 12px 0px;
+}
+.right-plus{
+    float: right;
+}
+.right-plus:hover{
+    color: #ffffff;
+}
+.block-title{
+    padding: 7px 15px;
+}
+.block-title-name:hover{
+    color: #ffffff;
+}
+.block-title:hover{
+    cursor: pointer;
+}
+.choose.active{
+    background: #50774C;
+    color: #ffffff;
+}
