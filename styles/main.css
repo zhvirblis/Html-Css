@@ -109,9 +109,9 @@ body{
 }
 .quik-switcher{
     font-size: 30px;
+    text-align: center;
     cursor: pointer;
-    align-self: center;
-    padding: 14px;
+    margin: 26px;
 }
 .quik-switcher:hover{
     color: #ffffff;
@@ -121,7 +121,9 @@ body{
     overflow-y: auto;
 }
 .wrapper{
-    max-height: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
 }
 /* Message panel */
 .top-menu{
@@ -179,12 +181,17 @@ body{
 .menu-icon:hover{
     color: #53ACFF;
 }
-input.search{
+input.search{    
     padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #999;
-    margin: 9px 6px;
+    border: none;
+    margin: 1px 8px;
     float: left;
+    width: 196px;
+    transition: 0.2s;
+}
+input.search:focus {
+    width: 276px;
+    outline: none;
 }
 .menu-icons {
     float: left;
@@ -194,4 +201,45 @@ input.search{
 }
 .menu-icon.star:hover{
     color: #FFB938;
+}
+.search-icon{
+    float: left;
+    margin: 7px 0px 0px 10px;
+    color: #999;
+}
+.search-wrapper{
+    margin: 7px 10px 0px 10px;
+    float: left;
+    border: 1px solid #AAA;
+    border-radius: 7px;
+}
+.flex-message{
+    display: flex;
+    flex-direction: column;
+}
+.messages-block{
+    display: flex;
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+.message-box{
+    display: flex;
+    height: 70px;
+    background: #ffffff;
+}
+.message-wrapper {
+    display: flex;
+    flex-grow: 1;
+    border: 2px solid #777;
+    margin: 14px 14px 14px -2px;
+}
+input.message-box-input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+}
+i.plus-icon {
+    border: 2px solid #777;
+    margin: 14px 0px 14px 14px;
+    padding: 10px;
 }
