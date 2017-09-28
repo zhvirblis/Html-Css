@@ -9,26 +9,27 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="flex-container">
-        <div class="left-panel">
+    <div class="flex container">
+        <div class="left-panel flex-column">
             <div class="left-panel-header">
                 <h2 class="name-of-workspace"> AIS </h2>
                 <i class="options fa fa-angle-down" aria-hidden="true"></i>
                 <i class="notififications fa fa-bell-o" aria-hidden="true"></i>
                 <div class="user">
-                    <i class="green-dot fa fa-circle" aria-hidden="true"></i> Yuri Zhvirblis
+                    <i class="green dot fa fa-circle" aria-hidden="true"></i> Yuri Zhvirblis
                 </div>
             </div>
+            <div class="lp-wrapper">
             <div class="threads choose">
                 <i class="threads-icon fa fa-commenting-o" aria-hidden="true">
                     </i>
                 All Threads
             </div>
             <div class="lp-block">
-                 <div class="block-title">
-                     <p class="block-title-name">Channels</p> 
-                     <i class="right-plus fa fa-plus-circle" aria-hidden="true"></i>
-                 </div>
+                <div class="block-title flex lp">
+                    <p class="block-title-name">Channels</p>
+                    <i class="right-plus fa fa-plus-circle" aria-hidden="true"></i>
+                </div>
                  <div class="choose"># books</div>
                  <div class="choose"># english</div>
                  <div class="choose"># general</div>
@@ -36,9 +37,91 @@
                  <div class="choose"># random</div>                 
                  <div class="choose active"># study</div>                 
             </div>
+            <div class="lp-block">
+                <div class="block-title flex lp">
+                    <p class="block-title-name">Direct Messages</p>
+                    <i class="right-plus fa fa-plus-circle" aria-hidden="true"></i>
+                </div>
+                <div class="choose">
+                        <i class="green dot fa fa-heart" aria-hidden="true"></i>
+                        slackbot
+                </div>
+                <div class="choose">
+                        <i class="green dot fa fa-circle" aria-hidden="true"></i>
+                        Yuri Zhvirblis <p class="you">(you)<p/>
+                </div>
+                <div class="choose">
+                        <i class="green dot fa fa-circle" aria-hidden="true"></i>
+                        Andrey Likhtar
+                </div>
+                <div class="choose">
+                        <i class="dot fa fa-circle-o" aria-hidden="true"></i>
+                        <i>Danil Fedorov</i>
+                </div>
+                <div class="choose">
+                        <i class="dot fa fa-circle-o" aria-hidden="true"></i>
+                        <i>Ilya Mokin</i>
+                </div>
+                <div class="choose">
+                        <i class="green dot fa fa-circle" aria-hidden="true"></i>
+                        Nastya Myalik
+                </div>
+                <div class="choose">
+                        <i class="green dot fa fa-circle" aria-hidden="true"></i>
+                        Sergei Dubovich
+                </div>
+                <div class="choose">
+                        <i class="dot fa fa-circle-o" aria-hidden="true"></i>
+                        <i>sergey galuza</i>
+                </div>
+                <div class="choose">
+                        <i class="dot fa fa-circle-o" aria-hidden="true"></i>
+                        <i>Vadim Semenyk</i>
+                </div>
+                <div class="choose">
+                        <i class="dot fa fa-circle-o" aria-hidden="true"></i>
+                        <i>Viktar Ramaniuk</i>
+                </div>
+            </div>
+            <div class="lp-block">
+                <div class="block-title flex lp">
+                    <p class="block-title-name">Apps</p>
+                    <i class="right-plus fa fa-plus-circle" aria-hidden="true"></i>
+                </div>
+            </div>
+            </div>
+            <div class="quik-switcher">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
         </div>
         <div class="message-panel">
-            message panel
+            <div class="top-menu">
+                <div class="left-block">
+                    <h3 class="name-conv">
+                        #study
+                    </h3>
+                    <div class="mini-icons">
+                        <p class="star mini-icon">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </p>
+                        |
+                        <p class="mini-icon">
+                            <i class="fa fa-user-o" aria-hidden="true"></i> 14
+                        </p>
+                        |
+                        <p class="mini-icon">
+                            <i class="fa fa-thumb-tack" aria-hidden="true"></i> 21
+                        </p>
+                        |
+                        <p class="mini-topic">
+                            <i class="add-topic">Add a topic</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="right-block">
+
+                </div>
+            </div>
         </div>
     </div>
 </body>

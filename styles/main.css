@@ -8,8 +8,13 @@ html{
 body{
     height: 100%;
 }
-.flex-container{
+.flex{
     display: flex;
+}
+.flex.lp{
+    justify-content: space-between;
+}
+.flex.container{
     justify-content: flex-start;
     flex-direction: row;
     font-family: Lato, appleLogo, sans-serif;
@@ -17,7 +22,7 @@ body{
 }
 .left-panel{
     background: #4D394B;
-    width: 220px;
+    min-width: 220px;
     color: rgb(202,196,201);
 }
 .left-panel-header{
@@ -51,9 +56,12 @@ body{
 .user{
     font-size: 13px;
 }
-.green-dot {
-    color: #50774C;
+.dot{
     margin-right: 7px;
+    font-size: 13px;
+}
+.green.dot {
+    color: #50774C;
 }
 .choose{
     padding: 4px 15px;
@@ -87,4 +95,70 @@ body{
 .choose.active{
     background: #50774C;
     color: #ffffff;
+}
+.lp-block{
+    margin: 12px 0;
+}
+.you{
+    color: #999;
+    display: inline-block;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.quik-switcher{
+    flex-grow: 1;
+    font-size: 30px;
+    cursor: pointer;
+    align-self: center;
+    padding: 14px;
+}
+.quik-switcher:hover{
+    color: #ffffff;
+}
+.lp-wrapper{
+    max-height: 100%;
+    overflow-y: auto;
+}
+/* Message panel */
+.top-menu{
+    border-bottom: 1px solid #DDD;
+    height: 70px;
+    width: 100%;
+}
+.message-panel{
+    width: 100%;
+}
+.left-block {
+    padding: 10px 18px;
+}
+.mini-icons{
+    color: #999;
+    font-size: 13px;
+    padding: 9px 0px;
+}
+.mini-icon{
+    padding: 0 5px;
+    cursor: pointer;
+    display: inline;
+}
+.mini-icon:hover{
+    color: #53ACFF;  
+}
+.mini-icon.star:hover{
+    color: #FFB938;  
+}
+.add-topic{
+    padding: 5px;
+    border: 2px solid transparent;
+}
+.add-topic:hover{
+    border-color: #EDEDED;
+    border-radius: 4px;
+}
+.mini-topic{
+    padding: 0 5px;
+    cursor: pointer;
+    display: inline;
 }
