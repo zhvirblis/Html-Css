@@ -130,6 +130,7 @@ body{
     border-bottom: 1px solid #DDD;
     height: 70px;
     width: 100%;
+    min-width: 820px;
 }
 .message-panel{
     width: 100%;
@@ -196,7 +197,7 @@ input.search:focus {
 .menu-icons {
     float: left;
 }
-.menu-icon.at:hover{
+.menu-icons.at:hover{
     color: #EE0000;
 }
 .menu-icon.star:hover{
@@ -230,16 +231,39 @@ input.search:focus {
 .message-wrapper {
     display: flex;
     flex-grow: 1;
-    border: 2px solid #777;
+    border: 2px solid #BBB;
     margin: 14px 14px 14px -2px;
+    border-radius: 0 8px 8px 0;
 }
 input.message-box-input {
     flex-grow: 1;
     border: none;
     padding: 10px;
+    margin: 4px;
+    outline: none;
 }
 i.plus-icon {
-    border: 2px solid #777;
+    border: 2px solid #BBB;
     margin: 14px 0px 14px 14px;
     padding: 10px;
+    color: #bbb;
+    border-radius: 8px 0 0 8px;
+}
+.message-icon {
+    cursor: pointer;
+    font-size: 21px;
+    color: #797979;
+    margin: 5px 3px;
+    display: inline-block;
+    transition: 0.2s;
+}
+.message-icon.at:hover{
+    color: #53ACFF;
+}
+.message-icon:hover{
+    font-size: 27px;
+    margin: 0px 0px;
+}
+.message-icon-block {
+    padding: 0 8px;
 }
