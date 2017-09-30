@@ -247,7 +247,14 @@ i.plus-icon {
     margin: 14px 0px 14px 14px;
     padding: 10px;
     color: #bbb;
+    cursor: pointer;
     border-radius: 8px 0 0 8px;
+}
+i.plus-icon:hover {
+    border-color: #0B7000;
+    background: #1FB60E;
+    color: #0B7000;
+    z-index: 2;
 }
 .message-icon {
     cursor: pointer;
