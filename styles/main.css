@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato&amp;subset=cyrillic');
 *{
     margin: 0;
 }
@@ -224,6 +224,7 @@ input.search:focus {
     overflow-y: scroll;
     flex-direction: column;
     justify-content: flex-end;
+    font-size: 14px;
 }
 .message-box{
     display: flex;
@@ -355,4 +356,30 @@ i.opt-icon:hover {
     margin: 0 auto;
     background: #FFF;
     padding: 0 12px;
+}
+.link-box img {
+    float: left;
+}
+p.link-name {
+    margin: 0px 20px 0px;
+    font-weight: bold;
+    color: #999;
+}
+.link-box {
+    display: flex;
+    margin: 11px 0;
+    border-left: 3px solid #DDD;
+    padding: 3px 4px;
+    width: 500px;
+}
+i.mess-star {
+    display: none;
+    margin: 3px 0;
+    cursor: pointer;
+}
+i.mess-star:hover {
+    color: #FFB938;
+}
+.message:hover i.mess-star {
+    display: block;
 }
