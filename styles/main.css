@@ -299,7 +299,11 @@ h3.name {
     font-size: 17px;
 }
 .message a {
-    color: #3a3aec;
+    color: #0576b9;
+    text-decoration: none;
+}
+.message a:hover{
+    text-decoration: underline;
 }
 .message-header {
     display: inline-flex;
@@ -382,4 +386,27 @@ i.mess-star:hover {
 }
 .message:hover i.mess-star {
     display: block;
+}
+.app-panel{
+    min-width: 68px;
+    background: #282a29;
+    text-align: center;
+}
+p.app-key {
+    color: #7c7d7c;
+    font-size: 10px;
+}
+.select {
+    background: #fff;
+    width: 3px;
+    height: 36px;
+    border-radius: 0 21% 21% 0;
+    position: absolute;
+}
+.app-icon {
+    cursor: pointer;
+}
+.app-icon {
+    cursor: pointer;
+    margin: 15px 0;
 }
