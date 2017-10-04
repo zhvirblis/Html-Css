@@ -176,8 +176,10 @@ body{
     cursor: pointer;
     font-size: 26px;
     color: #797979;
-    margin: 8px 3px;
+    margin: 5px 0px;
+    padding: 3px 6px;
     display: inline-block;
+    border-radius: 5px;
 }
 .menu-icon:hover{
     color: #53ACFF;
@@ -196,6 +198,9 @@ input.search:focus {
 }
 .menu-icons {
     float: left;
+}
+.menu-icon.active {
+    background: #EFEFEF;
 }
 .menu-icons.at:hover{
     color: #EE0000;
@@ -480,8 +485,12 @@ details summary::-webkit-details-marker {
 .body-about {
     margin: 0px 12px 16px;
 }
+.right-panel-body details[open] summary{
+    opacity: 1;
+}
 .right-panel-body details[open] summary::after{
     content: "\f0d7";
+    opacity: 1;
 }
 .right-panel details b {
     color: #717274;
@@ -541,9 +550,49 @@ a.time.about {
 .message .name {
     font-size: 14px;
 }
-details .message.notfull .text-wrapper{
+details .notfull .text-wrapper{
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.4)));
 }
 .wrapper-message-icon-block{
     width: 72px;
+}
+[contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    display: block;
+    color: #BBB;
+}
+i.right-panel-icon.fa.fa-thumb-tack {
+    color: #EE2222;
+}
+a.filename {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.pined-item{
+    margin: 12px 0;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    word-break: break-all;
+    padding: 7px 18px;
+}
+i.right-panel-icon.fa.fa-user-o {
+    color: #3dad3d;
+}
+.member-in-list img{
+    width: 24px;
+    border-radius: 3px;
+}
+.member-in-list {
+    padding: 6px 0px;
+    display: flex;
+    margin: 2px 0;
+    align-items: center;
+}
+.member-in-list .name{
+    padding: 0 5px;
+}
+img.offline {
+    filter: grayscale(100%);
+    opacity: 0.5;
 }
