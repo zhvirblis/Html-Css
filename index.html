@@ -34,13 +34,15 @@
                 <div class="left-panel-header">
                     <h2 class="name-of-workspace"> AIS </h2>
                     <i class="options fa fa-angle-down" aria-hidden="true"></i>
-                    <i class="notififications fa fa-bell-o" aria-hidden="true"></i>
+                    <i class="notififications fa fa-bell-o tooltip" aria-hidden="true">
+                            <span class="bottom-tooltip tooltiptext">Notififications</span>
+                    </i>
                     <div class="user">
                         <i class="green dot fa fa-circle" aria-hidden="true"></i> Yuri Zhvirblis
                     </div>
                 </div>
                 
-                    <div class="lp-wrapper">
+                    <div class="lp-wrapper styled-scroll">
                         <div class="threads choose">
                             <i class="threads-icon fa fa-commenting-o" aria-hidden="true">
                                 </i>
@@ -49,7 +51,9 @@
                         <div class="lp-block">
                             <div class="block-title flex lp">
                                 <p class="block-title-name">Channels</p>
-                                <i class="right-plus fa fa-plus-circle" aria-hidden="true"></i>
+                                <i class="right-plus fa fa-plus-circle tooltip" aria-hidden="true">
+                                    
+                                </i>
                             </div>
                             <div class="choose"># books</div>
                             <div class="choose"># english</div>
@@ -115,7 +119,9 @@
 
             </div>
             <div class="quik-switcher">
-                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-search tooltip" aria-hidden="true">
+                        <span class="tooltiptext top-tooltip">Quick switcher <span class="keymap"> (Ctrl+K)</span></span>
+                </i>
             </div>
         </div>
         <div class="message-panel flex-message">
@@ -126,32 +132,45 @@
                     </h3>
                     <div class="mini-icons">
                         <p class="star mini-icon">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o tooltip" aria-hidden="true">
+                                <span class="tooltiptext bottom-tooltip">Star this channel</span>
+                            </i>
                         </p>
                         |
-                        <p class="mini-icon">
-                            <i class="fa fa-user-o" aria-hidden="true"></i> 14
+                        <p class="mini-icon tooltip">
+                            <i class="fa fa-user-o" aria-hidden="true">
+                                    <span class="tooltiptext bottom-tooltip">View member list</span>                                    
+                            </i> 14
                         </p>
                         |
-                        <p class="mini-icon">
-                            <i class="fa fa-thumb-tack" aria-hidden="true"></i> 21
+                        <p class="mini-icon tooltip">
+                            <i class="fa fa-thumb-tack" aria-hidden="true">
+                                    <span class="tooltiptext bottom-tooltip">View pinned items</span>
+                            </i> 21
                         </p>
                         |
                         <p class="mini-topic">
                             <i class="add-topic">Add a topic</i>
+                            <a class="edit-topic">Edit</a>
                         </p>
                     </div>
                 </div>
                 <div class="right-block">
                     <div class="menu-icons">
-                        <p class="menu-icon">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p class="menu-icon disable">
+                            <i class="fa fa-phone tooltip" aria-hidden="true">
+                                <span class="tooltiptext bottom-tooltip">Only paid workspaces can start calls from channels</span>
+                            </i>
                         </p>
                         <p class="menu-icon active">
-                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            <i class="fa fa-info-circle tooltip" aria-hidden="true">
+                                <span class="tooltiptext bottom-tooltip">Hid channel details</span>
+                            </i>
                         </p>
                         <p class="menu-icon">
-                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <i class="fa fa-cog tooltip" aria-hidden="true">
+                                <span class="tooltiptext bottom-tooltip">Channel settings</span>
+                            </i>
                         </p>
                     </div>
                     <div class="search-wrapper">
@@ -161,13 +180,19 @@
                 
                     <div class="menu-icons">
                             <p class="menu-icon at">
-                                <i class="fa fa-at" aria-hidden="true"></i>
+                                <i class="fa fa-at tooltip" aria-hidden="true">
+                                        <span class="tooltiptext bottom-tooltip">Show activity</span>
+                                </i>
                             </p>
                             <p class="menu-icon star">
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o tooltip" aria-hidden="true">
+                                        <span class="tooltiptext bottom-tooltip">Show starred items</span>
+                                </i>
                             </p>
                             <p class="menu-icon">
-                                <i class="fa fa-ellipsis-v fa-lg blue" aria-hidden="true"></i>
+                                <i class="fa fa-ellipsis-v fa-lg blue tooltip" aria-hidden="true">
+                                        <span class="tooltiptext bottom-tooltip moreitems-tooltip">More items</span>
+                                </i>
                             </p>
                         </div>
                 </div>
@@ -175,9 +200,9 @@
 
             <div class="center-panel">
                 <div class="message-block-n-box">
-                    <div class="messages-block">
+                    <div class="messages-block styled-scroll">
                         <b class="day-name">
-                            Thursday, September 28th
+                            <p>Thursday, September 28th</p>
                         </b>
 
                         <div class="day">
@@ -339,7 +364,7 @@
                         </div>
 
                         <b class="day-name">
-                            Friday, September 29th
+                            <p>Friday, September 29th</p>
                         </b>
 
                         <div class="day">
@@ -497,7 +522,7 @@
                     </div>
                 </div>
 
-                <div class="right-panel">
+                <div class="right-panel styled-scroll">
                     <div class="header-right-panel">
                         About #study
                         <i class="close-right fa fa-times" aria-hidden="true"></i>

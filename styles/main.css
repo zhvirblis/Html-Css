@@ -7,6 +7,8 @@ html{
 }
 body{
     height: 100%;
+    font-family: Lato, appleLogo, sans-serif;
+    
 }
 .flex{
     display: flex;
@@ -17,7 +19,6 @@ body{
 .flex.container{
     justify-content: flex-start;
     flex-direction: row;
-    font-family: Lato, appleLogo, sans-serif;
     height: 100%;
 }
 .left-panel{
@@ -117,7 +118,7 @@ body{
     color: #ffffff;
 }
 .lp-wrapper{
-    max-height: 100%;
+    /* max-height: 100%; */
     overflow-y: auto;
 }
 .wrapper{
@@ -199,7 +200,14 @@ input.search:focus {
 .menu-icons {
     float: left;
 }
+.menu-icon.disable i{
+    color: #B1B1B1;
+}
+.menu-icon.disable:hover {
+    color: #B1B1B1;
+}
 .menu-icon.active {
+    color: #797979;
     background: #EFEFEF;
 }
 .menu-icons.at:hover{
@@ -646,4 +654,98 @@ button.edit-totif {
     background: #EFEFEF;
     border: 1px solid #CCC;
     padding: 7px 17px;
+}
+.styled-scroll::-webkit-scrollbar {
+    position: absolute;
+    width: 8px;
+    background: #eee;
+    border-radius: 4px;
+    border: solid #fff;
+    border-width: 3px 0px;
+}
+.styled-scroll::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #CCC;
+    position: absolute;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    font-family: Lato, appleLogo, sans-serif;    
+    font-size: 13px;
+
+    visibility: hidden;
+    width: 106px;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    /* bottom: 100%; */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    /* border-color: transparent transparent black transparent; */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.bottom-tooltip{
+    top: 150%;
+}
+.top-tooltip{
+    bottom: 150%;
+}
+.top-tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+.bottom-tooltip::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.edit-topic {
+    display: none;
+}
+.mini-topic:hover .edit-topic{
+    display: inherit;
+}
+.keymap{
+    color: #999;
+}
+.moreitems-tooltip::after{
+    left: 81% !important;
+}
+.moreitems-tooltip{
+    left: -462% !important;
+}
+.fa-star-o .tooltiptext{
+    width: 90px !important;
 }
