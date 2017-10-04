@@ -461,7 +461,7 @@ details summary::-webkit-details-marker {
     font-size: 14px;
 }
 .right-panel-body details{
-    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
 }
 .right-panel-body summary{
     padding: 14px 10px 27px 10px;
@@ -562,9 +562,9 @@ details .notfull .text-wrapper{
     color: #BBB;
 }
 i.right-panel-icon.fa.fa-thumb-tack {
-    color: #EE2222;
+    color: #EC5A05;
 }
-a.filename {
+.filename {
     text-decoration: none;
     color: #000;
     font-weight: bold;
@@ -595,4 +595,55 @@ i.right-panel-icon.fa.fa-user-o {
 img.offline {
     filter: grayscale(100%);
     opacity: 0.5;
+}
+i.fa.fa-files-o {
+    color: #e0b560;
+}
+a.filename {
+    text-decoration: none;
+}
+.file-img{
+    width: 32px;
+    height: 32px;
+}
+.pined-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.pined-item:hover button.about-file{
+    display: block;
+}
+button.about-file {
+    display: none;
+    color: #999;
+    padding: 3px 9px;
+    border: 1px solid #EEE;
+    background: #fff;
+    position: absolute;
+    right: 23px;
+    cursor: pointer;
+}
+button.about-file:hover {
+    color: #0576b9;
+}
+i.file-symb {
+    font-size: 32px;
+    color: #0576b9;
+}
+.pre-file{
+    font-family: Consolas,monaco,"Ubuntu Mono",courier,monospace;
+    font-size: 12px;
+    padding: 5px 0;
+}
+i.right-panel-icon.fa.fa-bell-o {
+    color: #ff3434;
+}
+.notif p{
+    font-size: 16px;
+}
+button.edit-totif {
+    background: #EFEFEF;
+    border: 1px solid #CCC;
+    padding: 7px 17px;
 }
