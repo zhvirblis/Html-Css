@@ -491,17 +491,18 @@ details summary::-webkit-details-marker {
     height: 0;
     flex-grow: 1;
 }
-.right-panel-body details{
-    border-top: 1px solid #e8e8e8;
-}
 .right-panel-body summary{
     padding: 14px 10px 27px 10px;
     color: #2C2D30;
     font-size: 20px;
     cursor: pointer;
-    opacity: 0.6;
+    background: #fff;
+    border-top: 1px solid #DDD;
 }
-.right-panel-body summary:hover{
+summary *{
+    opacity: 0.5;
+}
+.right-panel-body summary:hover *{
     opacity: 1;
 }
 .right-panel-body summary::after{
@@ -774,4 +775,24 @@ button.edit-totif {
 }
 .tr-anim{
     transition: 200ms;
+}
+summary {
+    display: block;
+    position: relative;
+    outline: none;
+    z-index: 20;
+}
+details{
+    z-index: 0;
+}
+DETAILS[open] summary ~ * 
+{
+ animation: sweep 0.5s;
+}
+
+@keyframes sweep 
+{
+ 0%    {opacity: 0; margin-top: -100px}
+ 50%   {opacity: 0.3}
+ 100%  {opacity: 1; margin-top: 0%}
 }
