@@ -772,4 +772,6 @@ button.edit-totif {
 .fa-star-o .tooltiptext{
     width: 90px !important;
 }
-
+.tr-anim{
+    transition: 200ms;
+}
