@@ -120,6 +120,8 @@ body{
 .lp-wrapper{
     /* max-height: 100%; */
     overflow-y: auto;
+    height: 0;
+    flex-grow: 1;
 }
 .wrapper{
     display: flex;
@@ -238,6 +240,7 @@ input.search:focus {
     flex-direction: column;
     /* justify-content: flex-end; */
     font-size: 14px;
+    height: 0;
 }
 .message-box{
     display: flex;
@@ -469,6 +472,8 @@ details summary::-webkit-details-marker {
 .right-panel-body {
     font-size: 14px;
     overflow-y: auto;
+    height: 0;
+    flex-grow: 1;
 }
 .right-panel-body details{
     border-top: 1px solid #e8e8e8;
