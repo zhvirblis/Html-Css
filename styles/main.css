@@ -822,3 +822,10 @@ DETAILS[open] summary ~ *
 .choose:hover .fa-times-circle-o{
     display: block;
 }
+.pined-item .close-right.fa.fa-times {
+    display: none;
+    align-self: normal;
+}
+.pined-item:hover .close-right.fa.fa-times {
+    display: block;
+}
