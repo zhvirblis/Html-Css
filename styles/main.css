@@ -511,6 +511,7 @@ details summary::-webkit-details-marker {
     border-top: 1px solid #DDD;
 }
 summary *{
+    transition: .1s;
     opacity: 0.5;
 }
 .right-panel-body summary:hover *{
