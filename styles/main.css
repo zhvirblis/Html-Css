@@ -47,8 +47,10 @@ body{
     cursor: pointer;
 }
 .left-panel-header:hover{
-    background: #2b172A;
-    color: #ffffff;    
+    background: #2b172A;  
+}
+.left-panel-header-firstpart:hover{
+    color: #FFFFFF;
 }
 .message-panel{
     background: #ffffff;
