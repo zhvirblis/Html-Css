@@ -263,14 +263,14 @@ input.search:focus {
 }
 .message-box{
     display: flex;
-    min-height: 70px;
+    /* min-height: 70px; */
     background: #ffffff;
 }
 .message-wrapper {
     display: flex;
     flex-grow: 1;
     border: 2px solid #BBB;
-    margin: 14px 14px 14px -2px;
+    margin: 0 14px 14px -2px;
     border-radius: 0 8px 8px 0;
     overflow-y: auto;
     max-height: 200px;
@@ -285,7 +285,7 @@ input.search:focus {
 }
 i.plus-icon {
     border: 2px solid #BBB;
-    margin: 14px 0px 14px 14px;
+    margin: 0 0px 14px 14px;
     padding: 10px;
     color: #bbb;
     cursor: pointer;
