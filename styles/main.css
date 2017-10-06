@@ -400,12 +400,14 @@ i.opt-icon:hover {
     margin: 0 auto;
     padding: 0 12px;
     z-index: 5;
+    top: 0;
     width: 200px;
 }
 .day-name p{
     position: relative;
     background: #FFF;
-    top: 0px;
+    top: 7px;
+    border-radius: 22px;
 }
 
 .link-box img {
@@ -662,8 +664,7 @@ button.about-file {
     padding: 3px 9px;
     border: 1px solid #EEE;
     background: #fff;
-    position: absolute;
-    right: 23px;
+    float: right;
     cursor: pointer;
 }
 button.about-file:hover {
@@ -794,6 +795,10 @@ summary {
     outline: none;
     z-index: 20;
 }
+summary::before{
+    display: none !important;
+}
+
 details{
     z-index: 0;
 }
