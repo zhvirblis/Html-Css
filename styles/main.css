@@ -309,8 +309,7 @@ i.plus-icon:hover {
     color: #53ACFF;
 }
 .message-icon:hover{
-    font-size: 27px;
-    margin: 0px 0px;
+    transform: scale(1.4);
 }
 .message-icon-block {
     padding: 0 8px;
