@@ -812,3 +812,13 @@ DETAILS[open] summary ~ *
  50%   {opacity: 0.3}
  100%  {opacity: 1; margin-top: 0%}
 }
+.choose .fa-times-circle-o{
+    display: none;
+    float: right;
+}
+.choose .fa-times-circle-o:hover{
+    color: #ffffff;
+}
+.choose:hover .fa-times-circle-o{
+    display: block;
+}
